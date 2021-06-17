@@ -36,7 +36,7 @@ function showHide() {
   for(let i = 0; i < swiperItemCollection.length; i++){
     swiperItemCollection[i].style.display = 'flex';
   }
-  swiperContainer.style.height = 'auto'
+  swiperContainer.style.height = 375 + 'px'
   buttonShow.style.display = 'none';
   buttonHidden.style.display = 'block';
   swiperContainer.style.background = '#F2F2F2'
