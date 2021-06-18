@@ -22,16 +22,14 @@ body{
 }
 
 .swiper-wrapper{
-    height: 180px;
+    max-height: 220px;
     padding-top: 10px;
-
 }
 
 .swiper-wrapper, .swiper-wrapper__hidden, .hidden-block{
     background: #F2F2F2;
+    padding-bottom: 17px;
 }
-
-
 
 .swiper-slide__customs{
     max-width: 210px;
@@ -43,6 +41,8 @@ body{
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     border-radius: 6px;
+    padding: 8px;
+    margin: 8px;
 }
 
 .swiper-wrapper__hidden{
@@ -91,6 +91,7 @@ body{
     flex-basis: 100%;
     margin-left: 8px;
     margin-top: 18px;
+    cursor: pointer;
 }
 
 .button-hidden img, .button-show img{
@@ -106,7 +107,7 @@ body{
 }
 
 .swiper-pagination{
-    margin-top: 18px;
+    top: 160px;
 }
 
 .transformArrowImage{
@@ -120,7 +121,6 @@ body{
     .swiper-container {
         height: 350px;
     }
-
     .swiper-header{
         height: 50px;
     }
@@ -132,7 +132,7 @@ body{
     .swiper-wrapper__hidden{
         display: flex;
         flex-wrap: wrap;
-        height: 205px;
+        max-height: 205px;
         padding: 10px;
     }
 
@@ -140,6 +140,12 @@ body{
         margin: 5px;
     }
 
+}
+
+@media screen and (max-width: 915px){
+    .swiper-container{
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 1120px){
